@@ -1,0 +1,39 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+#sidebar {
+    width: 300px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Allow scrolling if there are many items */
+}
+
+#renderCanvas {
+    flex: 1;
+    touch-action: none;
+}
+
+.furniture {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ddd;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.furniture img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
